@@ -1,18 +1,228 @@
-.nav__row {
+
+* {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #243e63;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    padding-top: 32px;
+}
+
+.header__customers--title {
+    margin-top: 80px;
+    color: #a0aec0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6;
+}
+div.container {
+    padding: 96px 0;
+}
+
+div.row.nav__row {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 32px;
 }
-.nav__links {
+div.nav__links {
   display: flex;
   align-items: center;
   gap: 32px;
+  padding: 0px 0px 2px;
+}
+div {
+    display: block;
+    unicode-bidi: isolate;
 }
 
-.nav__link {
+div.nav__link {
   text-decoration: none;
   color: #243e63;
 }
+div.nav__logo {
+  display: flex;
+  align-items: center;
+}
+div.nav__logo--title {
+  color: #243E63;
+  font: 24px "Inter", sans-serif;
+  font-weight: 900;
+  margin: 0px 0px 0px 12px;
+  padding: 0px 0px 2px;
+letter-spacing: .6px;
+
+}
+svg {
+  color: #243E63;
+  font: 13.3333px "Inter", san-serif;
+  width: 24;
+  height: 24;
+}
+svg [Attributes Style] {
+   font: 13.3333px "Inter", san-serif;
+  width: 24;
+  height: 24;
+  fill: none;
+  stroke:current-color;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+svg:not(:root) {
+  overflow-clip-margin: content-box;
+  overflow: hidden;
+}
+button.header__email--btn {
+  background: #6415ff;
+  margin: 16px 0px 0px;
+  padding: 16px 0px;
+  width: 100%;
+  line-height: 1.5;
+}
+nav {
+  padding-top: 32px;
+  display: flex;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.nav__link--primary {
+    margin: 0;
+    padding: 10px 32px;
+    margin-top: 2px;
+    border-radius: 9999px;
+    color: #fff;
+    background-color: #6415ff;
+    line-height: 1.5;
+    border: none;
+    width: auto;
+    transition: all 300ms ease;
+}
+.nav__logo--img {
+  height: 40px;
+  width: 40px;
+}
+
+div.nav__links {
+    display: flex;
+    align-items: center;
+    padding-bottom: 2px;
+}
+/* Header */
+header__img--wrapper {
+  font-size: 16px;
+}
+
+
+.header__email--input {
+    width: 100%;
+    border-radius: 500px;
+    border: 2px solid rgb(229, 231, 235);
+  
+    color: rgb(36, 62, 99);
+    font-size: 16px;
+    font-weight: 500;
+   
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: border-color 300ms;
+}
+@media (max-width: 640px) {
+    .header__email--btn {
+        width: 100%;
+        padding: 16px 0;
+        margin: 16px 0;
+        margin-bottom: 0px;
+        line-height: 1.5;
+    }
+}
+.header__email--btn {
+    z-index: 2;
+    margin: 8px;
+    height: calc(100% - 16px);
+    border-radius: 500px;
+    width: 160px;
+    border: none;
+    background-color: #6415ff;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 300ms ease;
+}
+.header__description {
+display: flex; 
+flex-direction: column;
+width: 40%; 
+}
+span.purple {
+  font: 30px;
+  color: #6415ff;
+}
+div.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+img.header__img {
+  width: 60%;
+}
+
+div.header__description {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+img.header__customers {
+  display: flex;
+  margin: 16px 0px 0px;
+  opacity: 0.5;
+  padding: 0px 64px 0px 0px;
+}
+@media (max-width: 1024px) {
+    .header__customers {
+        padding-right: 0px;
+    }
+}
+header .row {
+    display: flex;
+    align-items: center;
+    justify-content
+}
+
+@media (max-width: 1280px) {
+    .header__img--wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+@media (max-width: 1024px) {
+    .header__description, .header__img--wrapper {
+        width: 100%;
+        max-width: 512px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 1280px) {
+    .header__img--wrapper
+Specificity: (0,1,0)
+ {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+

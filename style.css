@@ -15,6 +15,9 @@ nav {
   align-items: center;
     padding-top: 32px;
 }
+h1 {
+  font-size: 36px;
+}
 
 .header__customers--title {
     margin-top: 80px;
@@ -36,11 +39,12 @@ div.row.nav__row {
   align-items: center;
   padding-top: 32px;
 }
-div.nav__links {
+.nav__links {
   display: flex;
   align-items: center;
   gap: 32px;
   padding: 0px 0px 2px;
+  margin-left: auto;
 }
 div {
     display: block;
@@ -91,10 +95,24 @@ button.header__email--btn {
   width: 100%;
   line-height: 1.5;
 }
-nav {
-  padding-top: 32px;
-  display: flex;
+.btn__menu {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 24px;
 }
+
+@media (max-width: 768px) {
+  .nav__links {
+    display: none;
+  }
+}
+  .btn__menu {
+    display: block;
+    margin-left: auto;
+  }
+
+
 img {
     overflow-clip-margin: content-box;
     overflow: clip;
@@ -116,31 +134,12 @@ img {
   width: 40px;
 }
 
-div.nav__links {
-    display: flex;
-    align-items: center;
-    padding-bottom: 2px;
-}
 /* Header */
 header__img--wrapper {
   font-size: 16px;
 }
 
 
-.header__email--input {
-    width: 100%;
-    border-radius: 500px;
-    border: 2px solid rgb(229, 231, 235);
-  
-    color: rgb(36, 62, 99);
-    font-size: 16px;
-    font-weight: 500;
-   
-    top: 0;
-    bottom: 0;
-    z-index: 1;
-    transition: border-color 300ms;
-}
 @media (max-width: 640px) {
     .header__email--btn {
         width: 100%;

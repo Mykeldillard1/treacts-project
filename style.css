@@ -532,7 +532,7 @@ header .row {
 }
 .header__email--input {
     width: 100%;
-    position: static;
+    position: absolute;
     border-radius: 500px;
     border: 2px solid rgb(229, 231, 235);
     padding: 16px 32px;
@@ -557,7 +557,7 @@ svg {
     margin: 16px 0 0;
     height: auto;
     border-radius: 500px;
-    width: 100%;
+    width: 160px;
     padding: 16px 0;
     border: none;
     background-color: #6415ff;
@@ -792,7 +792,12 @@ img {
     flex-direction: column;
     height: auto;
   }
-
+}
+@media (max-width: 640px) {
+  .header__email--input {
+    position: static;
+  }
+}
 
 .header__description {
 width: 40%; 
@@ -1045,6 +1050,7 @@ footer {
 @media (max-width: 640px) {
     .btn {
         line-height: 1.5;
+        width: 100%;
     }
 }
 @media (max-width: 768px) {
